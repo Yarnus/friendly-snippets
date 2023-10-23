@@ -157,5 +157,16 @@
     "atom list": {
         "prefix": "al",
         "body": "~w($0)a"
+    },
+    "def + oai": {
+        "prefix": "defoai",
+        "body": [
+            "@doc request_body: {\"request body\", \"application/json\",  %Schema{type: :object}},",
+            "     responses: [ok: {\"request body\", \"application/json\",  %Schema{type: :object}}]",
+            "def ${1:name}() do",
+            "  $0",
+            "end"
+        ],
+        "description": "Define a function with openapi spex"
     }
 }
