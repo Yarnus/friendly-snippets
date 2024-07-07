@@ -236,6 +236,18 @@
         ],
         "description": "Define a function with openapi spex"
     },
+     "ots search index - keyword": {
+            "prefix": "fsk",
+            "body": ["field_schema_keyword(\"$0\")"],
+        },
+     "ots search index - boolean": {
+            "prefix": "fsb",
+            "body": ["field_schema_boolean(\"$0\")"],
+        },
+    "ots search index - integer": {
+            "prefix": "fsi",
+            "body": ["field_schema_integer(\"$0\")"],
+        },
     "oai responses": {
         "prefix": "oairesp",
         "body": [
